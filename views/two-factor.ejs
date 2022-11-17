@@ -1,0 +1,18 @@
+<%- include('partials/header-signin') %>
+
+<main class="form-signin w-100 m-auto">
+    <form action="/two-factor" method="post">
+      <h1 class="h3 mb-3 fw-normal">Enter Code</h1>
+  
+      <div class="form-floating">
+        <input name="twoFactorCode" type="text" class="form-control" id="floatingInput" placeholder="Code">
+        <label for="floatingInput">Code</label>
+      </div>
+      
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+      
+      <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+    </form>
+</main>
+
+<%- include('partials/footer') %>
